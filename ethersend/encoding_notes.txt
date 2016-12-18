@@ -1,0 +1,16 @@
+Converting 16bit 44.1 khz stereo to mu-law
+------------------------------------------
+sox source.wav -r 8000 -c1 -tul sample.au
+
+Converting 16bit 44.1 kHz stereo to 16bit 16 kHz mono
+-----------------------------------------------------
+sox source.wav -r 16000 -c1 sample.wav 
+
+Info on wav file
+----------------
+ffmpeg -i sample.wav
+
+Playback Examples
+-----------------
+aplay sample.wav 
+aplay -f mu_law sample.au
