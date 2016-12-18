@@ -96,7 +96,7 @@ Use case 3 - Session recording of audio sample packets sent across the LAN
 Use case 4 - Playback of a saved audio session across the LAN
 -------------------------------------------------------------
    1)  Use the create_playback_db script to generate manifest file and binary
-       database, from the previously saved audio session in Use case 2.
+       database, from the previously saved audio session in Use case 3.
        cd msx-ethernet-audio/packet_player/playback_db
        python create_playback_db audio_capture.txt
    2)  Start etherplay
